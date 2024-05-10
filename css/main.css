@@ -238,7 +238,6 @@ background-repeat: no-repeat;
 
 .arrow,
 .nav-white {
-    position: absolute;
     display: inline-block;
     color: #4A1D1F;
 }
