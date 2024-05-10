@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: rgb(46, 45, 45);
+}
+
+/* Text style */
+h1{
+    font-size: 32px;
+    font-weight: 700;
+    color: #795548;
+}
+
+.logo {
+    font-size: 30px;
+    color: #795548;
+}
+
+/* Links style */
+#current-page {
+    color: #795548;
+    font-weight: 700;
+}
+
+.menu-container a:visited,
+a:link {
+    color: rgb(46, 45, 45);
+}
+
+a:hover,
+a:active {
+    color: rgb(216, 87, 87);
+}
+
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    align-items: center;
+    
+}
+
+.menu-container {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-container li {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+/* Search Input style */
+input[type="search"]{
+    border: 1px solid #795548;
+    padding: 5px;
+}
+
+.search-bar{
+    display: flex;
+}
+
+ .icon-nav {
+    border: 0;
+    padding: 5px;
+}
+
+.search-bar button {
+    background-color: #795548 ;
+    border: 0;
+    padding: 5px;
+}
+
+
+/* ===============Here start banner code===================== */
+.section-container {
+display: flex;
+height: 500px;
+padding: 3rem 3rem;
+background: url("../assets/img/pastel.png"), linear-gradient(to right, #ffffff, #fffdff, #fffcfd, #fffaf9, #fff9f5, #fef7ef, #fbf5e9, #f7f3e3, #f4efd9, #f1ebcf, #eee7c5, #ebe3bb);
+background-position: right;
+background-repeat: no-repeat;
+}
+
+.information {
+    margin-block: 1rem 3rem;
+    font-size: 1.1rem;
+    
+}
+
+/*=============== BUTTON ===============*/
+.btn {
+    display: inline-block;
+    background-color: #4A1D1F;
+    
+    color: white;
+    padding: 0.9rem 2.2rem;
+    border-radius: 0.5rem;
+    
+  }
+  
+  .btn-transparent {
+    background-color: transparent;
+    color: #4A1D1F;
+    border: 1px solid #4A1D1F;
+  }
+
+/* Button hover */
+/* .btn:hover {
+    background-color: var (var(--first-color-dark));
+  }
+  
+  .btn-transparent:hover {
+    background-color: var(--first-color);
+    color: var(--white);
+  } */
+
+
+
+.gallery-arrow,
+.gallery {
+  display: inline-block;
+  
+}
+
+.gallery-arrow {
+    position: relative;
+    left: 49px;
+    top: 44px;
+    color: #4A1D1F;
+    overflow-x: hidden;
+}
+
+.gallery{
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 100px 0 0 100px;
+  align-self: end;
+  padding: 15px;
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+  
+}
+
+.small {
+    font-size: 10px;
+    position: relative;
+    bottom: 5px;
+}
+
+.gallery img {
+    position: relative;
+    left: 200px;
+    height: 100px;
+    width: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, #ffffff, #fffdff, #fffcfd, #fffaf9, #fff9f5, #fef7ef, #fbf5e9, #f7f3e3, #f4efd9, #f1ebcf, #eee7c5, #ebe3bb);
+    gap: 10px;
+    align-items: center;
+    min-height: 200px;
+    padding: 25px 0;
+}
+
+.info-container h2 {
+    font-size: 32px;
+    color: #795548;
+    text-wrap: nowrap;
+    text-align: center;
+    width: 50%;
+}
+
+.info-container p {
+    border-left: 1px solid black;
+    width: 50%;
+    padding: 0 50px;
+}
+
+/* Menus gallery Section */
+.menus-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.menus-container > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.card-menus {
+    width: 150px;
+}
+
+.card-menus h3 {
+    text-align: left;
+}
+
+.card-menus img {
+    height: 200px;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.50); /* Aquí ajusta los valores según el efecto de sombra que desees */
+}
+
+.star-icon {
+    display: flex;
+    color: orange;
+   justify-content: center;
+}
+
+.star-icon, .rating {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.arrow,
+.nav-white {
+    display: inline-block;
+    color: #4A1D1F;
+}
+
+.nav-white {
+    border: 1px solid #4A1D1F;
+    padding: 5px 25px;
+    text-align: center;
+   
+}
+
+.arrow {
+    position: relative;
+    top: 8px;
+    font-size: 2rem;
+    color: #4A1D1F;
+   
+    
+    
+}
+
+/* QUOTE */
+
+#quote-field {
+    display: flex;
+    background-color:rgb(251, 237, 205);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%; 
+    height: auto;
+}
+
+#quotes-id {
+    font-size: small;
+    padding: 5px;  
+    margin-top: 10px;
+    border-style: dotted;
+    border-radius: 30%;
+    border-width: 2px;
+}
+
+#quote-id {
+    font-size: large;
+    width: 400px;
+    padding: 15px;
+    
+}
+
+#img-quote {
+    height: 70px;
+    width: 70px;
+    border-radius: 60%;
+}
+
+#name-quote {
+    padding: 10px;
+}
+
+#profession-quote {
+    font-size: smaller;
+}
+
+#dots {
+    display: inline-block;
+    margin: 10px;
+    
+}
+
+#dotA {
+    display: inline-block;
+    background-color: #795548;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+#dotB {
+    display: inline-block;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    margin: 10px;
+    
+}
+/* FOOTER */
+
+footer {
+    position: absolute;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100px; 
+    background-color: #333; 
+    color: #fff; 
+    text-align: center;
+    
+}
+
+#botton-navigate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin-top: 40px;
+}
+
+#botton-navigate a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
